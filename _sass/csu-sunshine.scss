@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+//CSU Colo Scheme from: http://brand.colostate.edu/d/sLlipb6y2ZT4/colorado-state-university-style-guide#/style-guide/color
+$green: #1E4D2B;
+$light-green: #255f35;
+$gold: #C8C372;
+$white: #FFFFFF;
+$aggie: #D9782D;
+$black: #59595B;
+$off-white: #cccccc;
+
+$small-screen: 415px;
+$large-screen: 1300px;
+
+
+
+// Width of the content area
+$content-width:    1027px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+// Import partials.
+@import
+  "sunshine/base",
+  "sunshine/syntax-highlighting",
+  "sunshine/_calendar",
+  "sunshine/labs"
+;

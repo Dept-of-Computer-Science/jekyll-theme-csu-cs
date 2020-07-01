@@ -1,0 +1,47 @@
+.embedded-video {
+  width:400px;
+  float:right;
+  padding: 5px 5px 5px 5px;
+}
+
+.lab-image {
+  width: 300px;
+  border: 1px solid $light-green;
+}
+
+.float-right {
+  float:right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+blockquote p {
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 0px;
+  background-color: $gold;
+  clear:both;
+}
+
+
+blockquote:before, blockquote::after {
+  content: none !important;
+}
+
+.image-instructions {
+  
+  figure {
+    height: 100%;
+    display: inline-block;
+    padding-right: 5px;
+  
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+    }
+  }
+  
+  
+  
+  
+  
+}

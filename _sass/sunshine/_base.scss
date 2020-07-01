@@ -1,0 +1,533 @@
+/*
+ * Sunshine style guide. All guides should use the
+ * same layout, but this helps set the colors.
+ * the screen.scss in the primary sass folder should
+ * be updated, as the website reads whatever one that imports
+ * (C) Albert Lionelle, Colorado State University
+ */
+
+@import "contactcard";
+
+html, body {
+  font-family: 'prox-regular', sans-serif;
+  background-color: $white;
+  height: 100%;
+  color: $black;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'factoria-book', sans-serif;
+  font-weight:normal;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.smaller {font-size:0.6em;line-height: 0.7em;font-weight: normal;}
+.text-left {text-align:left;}
+
+@media screen and (max-width: $small-screen) {
+  .medium-screen-only {
+    display:none;
+  }
+
+  .contact-card {
+    margin-left: auto;
+  }
+}
+
+.page-max {
+  max-width: $content-width;
+  margin: auto auto;
+
+}
+
+.top-bar {
+  //background-color: #eeeeee;
+  height: 80px;
+  margin-bottom: 20px;
+
+
+  h1 {
+    line-height: 68px;
+    font-size: 2.2em;
+    color: $green;
+    letter-spacing: 0.1em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    a {
+      text-decoration: none;
+      color: $green;
+
+    }
+    a:hover {
+      text-decoration: underline;
+      transition: 1s  ease-in-out;
+    }
+  }
+}
+
+.home {
+    padding-top: 40px;
+
+}
+
+
+
+.header {
+  color: $white !important;
+  background-color: $green;
+  margin-left: 0px;
+  padding-top:10px;
+
+
+   height: 80px;
+   line-height: 88px;
+
+  .csu-logo-large {
+    min-width: 350px;
+    padding-top: 5px;
+    display: inline-block;
+    max-width: 450px;
+    width: 450px;
+    padding-bottom: 10px;
+    margin-left: -90px;
+  }
+
+
+  .csu-logo-small {
+    max-width: 146px;
+    display: inline-block;
+    min-width: 146px;
+    width: 146px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .material-icons {
+    color: #767777 !important;
+  }
+
+  .larger-text {
+    font-family: 'prox-regular';
+    letter-spacing: .11em;
+    line-height: 1.1em;
+    font-size: 19px;
+    text-transform:uppercase;
+
+    vertical-align: middle;
+    display: inline-block;
+    width: 400px;
+    padding-top:5px;
+    padding-left: 15px;
+  }
+
+  .smaller-text {
+    font-family: 'prox-regular';
+    letter-spacing: .11em;
+    line-height: 1.1em;
+    font-size: 14px;
+    text-transform:uppercase;
+
+    vertical-align: middle;
+    display: inline-block;
+    width: 170px;
+    padding-left: 15px;
+  }
+
+  .level-2 {
+    background-color: $white;
+    color: $black;
+
+
+
+    h1 {
+      color: $green;
+      font-size: 1.5em;
+      font-weight:bold;
+      font-family: 'prox-regular';
+      padding-bottom: 20px;
+    }
+
+  }
+
+
+  .level-2.mdl-layout__header-row {
+    padding-left: 5px;
+  }
+/*
+  @media screen and (min-width:$large-screen) {
+    .mdl-layout__header-row {
+      padding-left: 0;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    .mdl-layout__header-row {
+      padding-left: auto;
+    }
+  }
+*/
+  .mdl-layout-title {
+    color: $white;
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
+
+
+  nav {
+    margin-left: auto;
+    margin-right: 0px;
+    //height: 60px;
+
+
+    a {
+      color: $white;
+    }
+    a:hover {
+      color: $aggie;
+    }
+   }
+
+  .nav-bar {
+    padding-right: 20px;
+    font-family: 'prox-regular';
+    text-transform:uppercase;
+
+    .spacer {
+      margin-left: 30px;
+    }
+
+    a {
+      background-color: transparent !important;
+      border-bottom: 4px solid transparent;
+      color: $black !important;
+      letter-spacing: 2px;
+      line-height: 1.5em;
+      font-size: 1em;
+      padding-left:0px;
+      padding-right: 0px;
+      margin-left: 30px;
+    }
+
+    .active {
+      color: $green !important;
+      font-weight: bold;
+
+    }
+
+    a:hover {
+      border-bottom: 4px solid $green;
+      transition: 1s  ease-in-out;
+    }
+  }
+
+}// end header
+
+
+
+.drawer {
+  border-right: none;
+
+  .mdl-layout-title {
+    color: $white !important;
+    font-family: 'prox-regular', sans-serif;
+    font-weight: bold;
+    background-color: $green !important;
+    line-height: 1em;
+    padding-top:30px;
+    padding-bottom: 5px;
+  }
+
+
+
+} // end drawer
+
+.page-content {
+  align-items: center;
+  margin-left: 40px;
+  background-color: $white;
+
+
+
+
+  h1 {
+    line-height: 68px;
+    font-size: 2em;
+    color: $green;
+    letter-spacing: 0.1em;
+
+  }
+
+  h1.title {
+    display: inline-block;
+    width: 350px;
+
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: $green;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+
+  }
+
+  div {
+    h2 {
+      padding-top: 0px;
+      margin-top: 0px;
+
+    }
+  }
+
+  h3 {
+    font-size: 1.2em;
+    color: $green;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+  }
+
+
+  h4 {
+    font-size: 1.1em;
+    color: $green;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+  }
+
+  h5 {
+    font-size: 1.0em;
+    color: $green;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+  }
+
+
+  a {
+    color: $aggie;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+  }
+  a:hover {
+    color: $aggie;
+    text-decoration: none;
+    border-bottom: 2px solid $aggie;
+    transition: .8s ease-in-out;
+  }
+
+  table, td, th{border-collapse: collapse; border: 1px solid $green; margin: 0 0 0 0;}
+  table {
+
+
+    th {
+      padding-right:10px
+    }
+    th,td {vertical-align: top; padding:5px;}
+
+    tr:nth-child(even){background-color: #f2f2f2;}
+  }
+}
+
+
+.mdl-mega-footer {
+  padding: 0px 0px 0px 0px;
+}
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+
+  .csu-logo-large {
+    width: 300px;
+    vertical-align: middle;
+  }
+
+  .csu-logo-small {
+
+    width: 100px;
+  }
+
+  background-color: $green !important;
+  color: $white;
+
+
+
+  a {color: $white;
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom: 1px solid transparent;
+  }
+  a:hover {
+    //color: $aggie;
+    border-bottom: 2px solid $aggie;
+    transition: 0.5s  ease-in-out;
+
+  }
+
+  .align-right {
+    text-align:right;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  p {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+
+  .small {
+    font-size: 0.9em;
+    line-height: 0.9em;
+    color: $off-white;
+  }
+
+}
+
+.upper-bar {
+  background-color: $light-green;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: $off-white;
+
+  a {
+    color: $off-white;
+    //border-bottom: 2px solid transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    //border-bottom: 2px solid $aggie;
+    //transition: 1s ease-in-out;
+  }
+
+
+  h3 {
+     font-size: 1em;
+     padding: 0px 0px 0px 0px;
+     margin: 0 0 0 0;
+     line-height: 1.3em;
+     text-transform: uppercase;
+     color: $white;
+  }
+
+  p {
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1.2em;
+    font-size: 0.9em;
+
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  li {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+
+
+
+
+
+}
+
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  a {
+    color: $gold !important;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+
+  }
+
+  .username {
+    border-bottom: 2px solid transparent;
+  }
+  .username:hover {
+   // color: $aggie !important;
+    border-bottom: 2px solid $aggie;
+    transition: 1s ease-in-out;
+  }
+
+
+}
+
+
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: $gold;
+  padding: 5px 3px 2px 5px;
+  vertical-align: text-bottom;
+}
+
+.social-media-list {
+  margin: 0 auto;
+  ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+  }
+
+  i {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 3px 2px 5px;
+    vertical-align: text-bottom;
+  }
+
+  li {
+    padding: 0 0 0 0;
+    //margin: 0 0 0 0;
+    float: left;
+    margin: 0 5px;
+    &:first-of-type { margin-left: 0 }
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+
+      //padding: $spacing-unit / 4;
+      //border: 1px solid $grey-color-light
+    }
+    &:hover .svg-icon { fill: currentColor; }
+  }
+}
+
+figure {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+
+}
+
+
+
+img[alt="MS Teams Format Banner"] {width:80%}
+

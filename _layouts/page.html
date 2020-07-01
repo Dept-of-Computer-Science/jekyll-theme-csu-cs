@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{%- if page.no-title != true -%}
+  {%- if page.title -%}
+<div class="top-bar">
+    <div class="page-max">
+        {%- if page.long-title -%}
+        <h1>{{page.long-title}}</h1>
+        {%- else -%}
+        <h1>{{page.title}}</h1>
+        {%- endif -%}
+    </div>
+</div>
+  {%- endif -%}
+{%- endif -%}
+<div class="page-max">
+    <div class="page-content">
+        {{content}}
+    </div>
+</div>

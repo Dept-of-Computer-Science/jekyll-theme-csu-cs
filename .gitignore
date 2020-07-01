@@ -1,0 +1,8 @@
+*.gem
+.bundle
+.sass-cache
+_site
+Gemfile.lock
+# teest files
+index.html
+_config.yml

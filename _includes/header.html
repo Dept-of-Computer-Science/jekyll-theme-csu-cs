@@ -1,0 +1,75 @@
+  <header class="header mdl-layout__header">
+
+    <div class="page-max mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title mdl-layout--large-screen-only">
+          <img  class="csu-logo-large" src="{{ "/assets/img/signature-oneline.svg" | relative_url }}"
+               alt="Colorado State University Logo" /> <span class="larger-text"> | {{site.title}}</span>
+        </span>
+
+
+
+        <span class="mdl-layout-title mdl-layout--small-screen-only">
+          <img class="csu-logo-small" src="{{ "/assets/img/signature-mobile.svg" | relative_url }}"
+               alt="Colorado State University Logo" /> <span class="smaller-text"> | {{site.title}}</span>
+        </span>
+    </div>
+        <div class="level-2">
+        <div class="page-max mdl-layout__header-row ">
+
+
+
+            <div class="mdl-layout-spacer"></div>
+
+            <nav class="mdl-navigation mdl-layout--large-screen-only nav-bar">
+                {% assign sorted_pages = site.pages | sort:"order" %}
+                {%- for my_page in sorted_pages -%}
+                {%- if my_page.title -%}
+
+                {%- unless my_page.no-nav -%}
+                    <a class="mdl-navigation__link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                {%- endunless -%}
+
+                {%- endif -%}
+                {%- endfor -%}
+
+                {%- if  site.top-nav-external -%}
+                <span class="spacer"> | </span>
+                {%- for extern in site.top-nav-external -%}
+                <a class="mdl-navigation__link" href="{{extern.url}}">{{extern.title | escape}}</a>
+                {%- endfor -%}
+                {%- endif -%}
+
+            </nav>
+        </div>
+        </div>
+
+
+
+
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+      <span class="mdl-layout-title">
+          <span class="title-card">{{site.title}}</span><br>
+      <span class="smaller">Computer Science</span>
+      </span>
+
+    <nav class="mdl-navigation">
+        {% assign sorted_pages = site.pages | sort:"order" %}
+        {%- for my_page in sorted_pages -%}
+        {%- if my_page.title -%}
+            {%- unless my_page.no-nav -%}
+        <a class="mdl-navigation__link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- endunless -%}
+        {%- endif -%}
+        {%- endfor -%}
+
+        {%- for extern in site.top-nav-external -%}
+        <a class="mdl-navigation__link" href="{{extern.url}}">{{extern.title | escape}}</a>
+        {%- endfor -%}
+
+
+
+    </nav>
+  </div>

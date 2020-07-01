@@ -1,0 +1,71 @@
+<footer class="mdl-mega-footer">
+
+    <div class="upper-bar">
+
+        <div class="page-max">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col">
+
+        <h3>Computer Science Department</h3>
+       <p>279 Computer Science Building <br/>
+        1100 Centre Avenue <br />
+        Fort Collins, CO 80523 <br />
+        Phone: (970) 491-5792<br />
+        Fax: (970) 491-2466
+       </p>
+
+    </div>
+    <div class="mdl-cell mdl-cell--3-col">
+        <h3>Department</h3>
+        <ul>
+            <li><a href="http://compsci.colostate.edu/courses/">Courses</a></li>
+            <li><a href="http://compsci.colostate.edu/degrees/">Degrees</a></li>
+            <li><a href="http://compsci.colostate.edu/people/">Faculty & Staff</a></li>
+            <li><a href="http://compsci.colostate.edu/future-students/">Prospective Students</a></li>
+        </ul>
+
+    </div>
+    <div class="mdl-cell mdl-cell--5-col">
+        {%- if site.title -%}
+          <h3>{{site.title | escape}}</h3>
+        {%- endif -%}
+        {%- if site.description -%}
+          <p>{{site.description | escape}}</p>
+        {%- endif -%}
+        {%- include social.html -%}
+    </div>
+  </div>
+  </div>
+    </div>
+
+<div class="mdl-mini-footer footer">
+    <div class="mdl-mini-footer__left-section">
+    <p>
+    <a href="http://admissions.colostate.edu/">Apply to CSU</a>
+    <a href="http://www.colostate.edu/info-contact.aspx">Contact CSU</a>
+    <a href="http://www.colostate.edu/info-disclaimer.aspx">Disclaimer</a>
+    <a href="http://www.colostate.edu/info-equalop.aspx">Equal Opportunity</a>
+    <a href="http://www.colostate.edu/info-privacy.aspx">Privacy Statement</a>
+    </p>
+    <p class="small">
+    &copy; {{'now' | date: "%Y"}} Colorado State University - Computer Science Department, Fort Collins, CO 80523
+    </p>
+    </div>
+
+    <div class="mdl-mini-footer__right-section">
+    <span class="mdl-layout--large-screen-only">
+          <img  class="csu-logo-large" src="{{ "/assets/img/signature-oneline.svg" | relative_url }}"
+               alt="Colorado State University Logo" /> <span class="larger-text"> </span>
+        </span>
+
+    </div>
+</div>
+
+
+</footer>
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<!--<script src="{{ "/bower_components/material-design-lite/material.min.js" | relative_url }}"></script>-->
+
+
