@@ -420,7 +420,6 @@ See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set i
 * [`jekyll-feed`](https://github.com/jekyll/jekyll-feed) - A Jekyll plugin to generate an Atom (RSS-like) 
 feed of your Jekyll posts
 
-TODO: add zybooks link plugin
 
 ## Contributing
 
