@@ -35,24 +35,45 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 ### Quick List of Includes
 
+Includes most courses should include:
+
 * `resources/university.html`  - includes tilt, counselling, and canvasTech with headers under a 'University Resources'
 header. **Most courses should include this**. 
+* `policies/policiesAll.html` - lists policies related to CSU Principles of Community, includes all policies. 
 
+
+General Useful Includes:
+* `resources/eclipse.html` - eclipse install information.
+* `resources/intelliJ.html` - intelliJ install information including student account signup, and toolbox install. 
+* `resources/teams.html` - resources about Microsoft Teams, including install recommendations and links to ACNS. 
+* `resources/randomJavaLinks.html` - resources about random help / practice sites for java programming. 
+* `grading/wholeGradesOnly.html` - table with the 60,70,80,90 grade scale (no +/- options)
+(TODO: add +/- options table)
+
+The following includes are all part of `resources/university.html`
 * `resources/canvasTech.html` - information about technical support for canvas, usually not needed as already provided
 in `resources/university.html`.
 * `resources/counseling.html` - information about counseling services, usually not needed as already provided
 in `resources/university.html`.
 * `resources/tilt.html` - information about tilt and tutoring options for students, usually not needed as already provided
 in `resources/university.html`.
-* `resources/eclipse.html` - eclipse install information.
-* `resources/intelliJ.html` - intelliJ install information including student account signup, and toolbox install. 
-* `resources/teams.html` - resources about Microsoft Teams, including install recommendations and links to ACNS. 
-* `resources/randomJavaLinks.html` - resources about random help / practice sites for java programming. 
+
+The following includes are all part of `policies/policiesAll.html`
+* `policies/cheating.html` - includes CMU cheating examples
+* `policies/copyrighted.html` - copyrighted material disclaimer from CSU Online
+* `policies/daca.html` - daca student resources
+* `policies/diversityStatement.html` - CSU diversity statement
+* `policies/honorPledge.html` - CSU honorPledge
+* `policies/netiquette.html` - CSU netiquette
+* `policies/religious.html` - CSU religious observance policies
+* `policies/thirdParty.html` - CSU third party disclaimer on data collection
+* `policies/title9.html` - CSU title 9 policies and resources for interpersonal violence 
+* `policies/universalDesign.html` - CSU universal design commitment 
 
 The following _includes you don't usually need to directly include, as the layouts already include them
 
 * `google-analytics.html` - Inserts Google Analytics module (active only in production environment).
-*  `disqus_comments.html` - Code to markup disqus comment box.
+* `disqus_comments.html` - Code to markup disqus comment box.
 * `footer.html` - Defines the site's footer section. Contains standard CS department links, and uses
 the site description in the bottom right panel. 
 * `head.html` - Code-block that defines the `<head></head>` in *default* layout.
