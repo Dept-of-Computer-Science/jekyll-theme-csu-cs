@@ -1,5 +1,5 @@
 /*
- * Sunshine style guide. All guides should use the
+ * CSU Default style guide. All guides should use the
  * same layout, but this helps set the colors.
  * the screen.scss in the primary sass folder should
  * be updated, as the website reads whatever one that imports
@@ -158,29 +158,16 @@ h1, h2, h3, h4, h5, h6 {
   .level-2.mdl-layout__header-row {
     padding-left: 5px;
   }
-/*
-  @media screen and (min-width:$large-screen) {
-    .mdl-layout__header-row {
-      padding-left: 0;
-    }
-  }
-  @media screen and (max-width: 1025px) {
-    .mdl-layout__header-row {
-      padding-left: auto;
-    }
-  }
-*/
+
   .mdl-layout-title {
     color: $white;
-    /*margin-left: auto;
-    margin-right: auto;*/
   }
 
 
   nav {
     margin-left: auto;
     margin-right: 0px;
-    //height: 60px;
+
 
 
     a {

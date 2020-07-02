@@ -37,9 +37,8 @@ $on-laptop:        800px !default;
 
 
 // Import partials.
-@import
-  "sunshine/base",
-  "sunshine/syntax-highlighting",
-  "sunshine/_calendar",
-  "sunshine/labs"
+@import "parts/base",
+"parts/syntax-highlighting",
+"parts/_calendar",
+"parts/labs"
 ;

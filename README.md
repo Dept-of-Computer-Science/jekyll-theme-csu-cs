@@ -1,10 +1,8 @@
 # jekyll-theme-csu-cs
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+The CSU-CS theme is based off the [Brand Style Guidelines](https://creativeservices.colostate.edu/brand-style-guide/).
+It is meant for use of courses taught by the CS department at CSU, and students / faculty are also
+free to use it. Please follow th CSU Branding Styl Guidelines and copy info. 
 
 
 ## Installation
@@ -31,7 +29,6 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
 ### Quick List of Includes
 
@@ -48,6 +45,7 @@ General Useful Includes:
 * `resources/teams.html` - resources about Microsoft Teams, including install recommendations and links to ACNS. 
 * `resources/randomJavaLinks.html` - resources about random help / practice sites for java programming. 
 * `grading/wholeGradesOnly.html` - table with the 60,70,80,90 grade scale (no +/- options)
+* `helpdesk.html` - MS Teams helpdesk instructions
 (TODO: add +/- options table)
 
 The following includes are all part of `resources/university.html`
@@ -120,6 +118,284 @@ permalink: resources/
 ---
 ```
 
+### HelpDesk Hours / Table
+The theme comes with a dynamic table that adjust based on screen size. An example of
+formatting of the table is as follows. The classes are essential. 
+
+```html
+   <h2>Helpdesk Times</h2>
+    <table id="calendar">
+        <caption>For Su2020 all helpdesk hours will be online. See: <a href="/~cs150/.Summer20/help-desk/">help desk instructions</a></caption>
+        <tr class="weekdays">
+            <th id="time" scope="col">Time (MDT)</th>
+            <th scope="col">Sunday</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+        </tr>
+        <tr>
+              <td class="time">
+                  8:00 AM
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+          </tr>
+          <tr>
+              <td class="time">
+                  9:00 AM
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+          </tr>
+          <tr>
+              <td class="time">
+                  10:00 AM
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+              <td>
+
+              </td>
+          </tr> 
+        <tr>
+            <td class="time">
+                11:00 AM
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                12:00 PM
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td class="">
+            </td>
+            <td class="">
+            </td>
+            <td class="">
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                1:00 PM
+            </td>
+            <td>
+
+            </td>
+            <td class="">
+            </td>
+            <td class="">
+            </td>
+            <td class="">
+            </td>
+            <td class="">
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                2:00 PM
+            </td>
+            <td>
+
+            </td>
+            <td class="">
+            </td>
+            <td class="">
+            </td>
+            <td class="">
+            </td>
+            <td class="">
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                3:00 PM
+            </td>
+            <td>
+
+            </td>
+            <td class="open">
+                <span class="day">M</span>
+                <span class="shift"> <a href="/~cs150/.Summer20/help-desk/">MS Teams</a></span>
+            </td>
+            <td class="open">
+                <span class="day">T</span>
+                <span class="shift"><a href="/~cs150/.Summer20/help-desk/">MS Teams</a></span>
+            </td>
+            <td class="open">
+                <span class="day">W</span>
+                <span class="shift"><a href="/~cs150/.Summer20/help-desk/">MS Teams</a></span>
+            </td>
+            <td class="open">
+                <span class="day">Th</span>
+                <span class="shift"><a href="/~cs150/.Summer20/help-desk/">MS Teams</a></span>
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                4:00 PM
+            </td>
+            <td>
+
+            </td>
+            <td class="open">
+                <span class="day">M</span>
+                <span class="shift"><a href="/~cs150/.Summer20/help-desk/">MS Teams</a></span>
+            </td>
+            <td class="open">
+                <span class="day">T</span>
+                <span class="shift"><a href="/~cs150/.Summer20/help-desk/">MS Teams</a></span>
+            </td>
+            <td class="open">
+                <span class="day">W</span>
+                <span class="shift"><a href="/~cs150/.Summer20/help-desk/">MS Teams</a></span>
+            </td>
+            <td class="open">
+                <span class="day">Th</span>
+                <span class="shift"><a href="/~cs150/.Summer20/help-desk/">MS Teams</a></span>
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                5:00 PM
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+```
+
 ### Plugins
 csu-cs comes with the following plugins:
  
@@ -148,15 +424,13 @@ Add pages, documents, data, etc. like normal to test your theme's contents. As y
 to your theme and to your content, your site will regenerate and you should see the changes in the browser 
 after a refresh, just like normal.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git
- will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-csu-cs.gemspec` accordingly.
-
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Acknowledgements 
 
-
+* jekyll-minima  - The style sheet, and svg icons are based off their original theme
+* jekyll-feed - Included as part of the gem bundle
+* jekyll-seo - Included as part of the gem bundle
 
