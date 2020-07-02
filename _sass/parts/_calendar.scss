@@ -72,6 +72,10 @@ td.time {
   color: $green;
 }
 
+#calendar .open a {
+  color: $green;
+}
+
 #calendar .day {
   display:none;
 }
