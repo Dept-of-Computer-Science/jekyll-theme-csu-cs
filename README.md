@@ -396,6 +396,20 @@ formatting of the table is as follows. The classes are essential.
     </table>
 ```
 
+### Enabling Google Analytics
+To enable Google Analytics, add the following lines to your Jekyll site:
+
+```
+  google_analytics: UA-NNNNNNNN-N
+```  
+Google Analytics will only appear in production, i.e., JEKYLL_ENV=production
+
+### Enabling Excerpts on the Home Page
+To display post-excerpts on the Home Page, simply add the following to your _config.yml:
+```
+show_excerpts: true
+```
+
 ### Plugins
 csu-cs comes with the following plugins:
  
@@ -410,7 +424,8 @@ TODO: add zybooks link plugin
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. 
+Bug reports and pull requests are welcome on GitHub at 
+https://github.com/Dept-of-Computer-Science/jekyll-theme-csu-cs. 
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected 
 to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
@@ -430,7 +445,7 @@ The theme is available as open source under the terms of the [MIT License](https
 
 ## Acknowledgements 
 
-* jekyll-minima  - The style sheet, and svg icons are based off their original theme
+* jekyll-minima  - The style sheet, and svg icons are based off their original theme. Analytics comes from minima theme.
 * jekyll-feed - Included as part of the gem bundle
 * jekyll-seo - Included as part of the gem bundle
 
