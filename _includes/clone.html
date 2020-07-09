@@ -1,0 +1,11 @@
+<div class="gitClone">
+{% highlight console %}
+> git clone {{include.url}}
+{%endhighlight%}
+{%if include.text%}
+<p>Direct:
+    <a href="{{include.url}}" alt="Direct link to repository: {{include.text}}"
+   target="{{include.target | _blank}}" >{{include.text}}</a>
+</p>
+{%endif%}
+</div>

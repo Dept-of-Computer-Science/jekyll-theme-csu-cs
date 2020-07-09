@@ -46,7 +46,13 @@ General Useful Includes:
 * `resources/randomJavaLinks.html` - resources about random help / practice sites for java programming. 
 * `grading/wholeGradesOnly.html` - table with the 60,70,80,90 grade scale (no +/- options)
 * `helpdesk.html` - MS Teams helpdesk instructions
-(TODO: add +/- options table)
+* `clone.html` - Used for including a link to a git clone.   
+   This include utilizes the following parameters, `url` and `text`. url is required, and will insert
+   the url of the git repository after >git clone. If text is included, a link will appear
+   at the bottom based on the text. For example:
+   ```handlebars
+  {% include clone.html url="https://github.com/CSU-CS150/lectureExamples.git" text="Lecture Examples" %}
+  ```
 
 The following includes are all part of `resources/university.html`
 * `resources/canvasTech.html` - information about technical support for canvas, usually not needed as already provided
