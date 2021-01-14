@@ -523,4 +523,13 @@ img[alt="MS Teams Format Banner"] {width:80%}
   color: black;
   font-weight: bolder;
   letter-spacing: 1.1px;
+
+  a{
+    color: $green;
+  }
+  a:hover {
+    color:  $green;
+    border-bottom-color: $green;
+  }
+
 }
